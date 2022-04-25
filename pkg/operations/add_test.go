@@ -19,3 +19,13 @@ func TestAdd(t *testing.T) {
 
 	})
 }
+
+func TestCustomAdd(t *testing.T) {
+	t.Parallel()
+	valorEsperado := 10
+	valor := operations.Add(5, 5)
+	if valor != valorEsperado {
+		t.Error("O valor esperado é:", valorEsperado, "e o valor apresentado foi: ", valor)
+	}
+
+}

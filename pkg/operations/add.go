@@ -1,6 +1,5 @@
 package operations
 
 func Add(a int, b int) int {
-	// code
-	return 2
+	return a + b
 }
